@@ -8,7 +8,7 @@ class Game
   attr_accessor :selected_letters
 
   def initialize
-    @word = 'Hangman'
+    @word = 'Hangman'.upcase
     @selected_letters = []
   end
 
@@ -23,7 +23,7 @@ class Game
   end
 
   def failed_attempts
-    selected_letters.select { |letters|
+    selected_letters.select { |letter|
       !word.include?(letter)
     }.size
   end
