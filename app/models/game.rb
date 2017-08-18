@@ -8,7 +8,7 @@ class Game
   attr_accessor :selected_letters
 
   def initialize
-    @word = 'Hangman'.upcase
+    @word = 'Malaysia'.upcase
     @selected_letters = []
   end
 
